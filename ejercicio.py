@@ -40,19 +40,22 @@
 #para concatenar 3 veces la misma lista
 #practica Tuplas
 
-mitupla=("Juan",13,1,1995)
-miLista=list(mitupla)
-print(mitupla[1])
-print(miLista)
+#mitupla=("Juan",13,1,1995)
+#miLista=list(mitupla)
+#print(mitupla[1])
+#print(miLista)
 
-miLista=["Juan",13,1,1995,"Juan"]
-mitupla=tuple(miLista)
+#miLista=["Juan",13,1,1995,"Juan"]
+#mitupla=tuple(miLista)
+#print(mitupla in mitupla)
+#print(mitupla.count(13))
+#print(mitupla.count("Juan"))
+#print(len(mitupla))
+
+mitupla="Juan",13,1,1995
 print(mitupla)
-print("Juan" in mitupla)
-print(mitupla.count(13))
-print(mitupla.count("Juan"))
-print(len(mitupla))
-
-
-
-
+nombre,dia,mes,agno=mitupla
+print(nombre)
+print(dia)
+print(mes)
+print(agno)
