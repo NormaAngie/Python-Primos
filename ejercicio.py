@@ -438,51 +438,202 @@
 
 #print(miCoche.estado())
 
-class Coche():
+#class Coche():
   
-  largoChasis=250
-  anchoChasis=120
-  ruedas=4
-  enmarcha=False
+  #largoChasis=250
+  #anchoChasis=120
+  #ruedas=4
+  #enmarcha=False
 
-  def arrancar(self,arrancamos): 
-    self.enmarcha=arrancamos
+  #def arrancar(self,arrancamos): 
+    #self.enmarcha=arrancamos
 
-    if(self.enmarcha):
-      return "El coche está en marcha"
-    else:
-      return "El coche está parado"
+    #if(self.enmarcha):
+      #return "El coche está en marcha"
+    #else:
+     # return "El coche está parado"
 
-  def estado(self):
-    print("El coche tiene", self.ruedas, "ruedas. Un ancho de", self.anchoChasis, "y un largo de", self.largoChasis)
+  #def estado(self):
+   # print("El coche tiene", self.ruedas, "ruedas. Un ancho de", self.anchoChasis, "y un largo de", self.largoChasis)
 
-miCoche=Coche() #instanciar una clase
-print("El largo del coche es: ", miCoche.largoChasis)
-print("El coche tiene",miCoche.ruedas, "ruedas")
-print(miCoche.arrancar(True))
-miCoche.estado()
-print("A continuacion creamos el segundo objeto----")
+#miCoche=Coche() #instanciar una clase
+#print("El largo del coche es: ", miCoche.largoChasis)
+#print("El coche tiene",miCoche.ruedas, "ruedas")
+#print(miCoche.arrancar(True))
+#miCoche.estado()
+#print("A continuacion creamos el segundo objeto----")
 
-miCoche2=Coche()
-print("El largo del coche es: ", miCoche2.largoChasis)
-print("El coche tiene",miCoche2.ruedas, "ruedas")
-print(miCoche2.arrancar(False))
-miCoche2.estado()
+#miCoche2=Coche()
+#print("El largo del coche es: ", miCoche2.largoChasis)
+#print("El coche tiene",miCoche2.ruedas, "ruedas")
+#print(miCoche2.arrancar(False))
+#miCoche2.estado()
+
+#class Coche():
+  
+#  def __init__(self):
+#    self.__largoChasis=250
+#    self.__anchoChasis=120
+#    self.__ruedas=4
+#    self.__enmarcha=False
+
+#  def arrancar(self,arrancamos): 
+#    self.__enmarcha=arrancamos
+
+#    if(self.__enmarcha):
+#      chequeo=self.__chequeo_interno()
+
+#    if(self.__enmarcha and chequeo):
+#        return "El coche está en marcha"
+
+#    elif(self.__enmarcha and chequeo==False):
+#      return "Algo ha ido mal en el chequeo. no podemos arrancar"
+#    else:  
+#      return "El coche está parado  "
+   
+#  def estado(self):
+#    print("El coche tiene", self.__ruedas, "ruedas. Un ancho de", self.__anchoChasis, "y un largo de", self.__largoChasis)
+
+#  def __chequeo_interno(self):
+#    print("realizado chequeo interno")
+#    self.gasolina="ok"
+#    self.aceite="mal"
+#    self.puertas="cerradas"
+   
+#    if(self.gasolina=="ok" and self.aceite=="ok" and self.puertas=="cerradas"):
+#      return True
+#    else:
+#      return False
+
+
+#miCoche=Coche() #instanciar una clase
+#print(miCoche.arrancar(True))
+#miCoche.estado()
+#print("A continuacion creamos el segundo objeto----")
+#miCoche2=Coche()
+#print(miCoche2.arrancar(False))
+#miCoche2.estado()
+
+#class Vehiculos():
+#  def __int__(self, modelo):
+
+#    #self.marca=marca
+#    self.modelo=modelo
+#    self.enmarcha=False
+#    self.acelera=False
+#    self.frena=False
+    
+#  def arrancar(self):
+#    self.enmarcha=True
+
+#  def acelerar(self):
+#    self.acelera=True
+  
+#  def frenar(self):
+#    self.frena=True
+  
+#  def estado(self):
+#    print("Marca:",  "\nModelo:",  "\nEn Marcha:", self.enmarcha, "\nAcelerando:", self.acelera,"\nFrenado:", self.frena)
+
+#class Motox(Vehiculos):
+#  hcaballito=""
+#  def caballito(self):
+#    hcaballito="Voy haciendo el caballito"
+
+#miMoto1=Motox()
+#miMoto1.caballito()
+#miMoto1.estado()
+
+#Ejercicio 2:
+
+#class Transporte(): #comportamientos universales
+
+#    def __init__(self, marca, modelo):
+
+#        self.marca=marca
+
+#        self.modelo=modelo
+#        self.en_marcha=False
+#        self.acelera=False
+
+#        self.frena=False
+
+#    def arrancar(self):
+
+#        self.en_marcha=True
+
+#    def acelerar(self):
+
+#        self.acelera=True
+
+#    def frenar(self):
+
+#        self.frena=True
+
+#    def edo(self):
+
+        #print("Marca: ", self.marca, "\nModelo: ", self.modelo, "\nEn marcha: ", self.en_marcha, #"\nAcelerando: ", self.acelera, "\nFrenando: ", self.frena)
+
+#class Furgoneta(Transporte):
+ #   def carga(self,cargar):
+ #     self.cargado=cargar
+ #     if(self.cargado):
+ #       return "La furgoneta está cargada"
+ #     else:
+ #       return "La furgoneta no está cargada"
+
+#class Moto(Transporte): #aquí le pones la super clase para que le heredes a la moto, en este caso, si no le pones a qué superclase pertenece te marca error en la consola. Es un comportamiento propio
+
+#    hcaballito="" #aquí declaras una variable "hcaballito"  
+#    def caballito(self):
+#        self.hcaballito="Estás haciendo el caballito"
+#    def edo(self):
+         #print("Marca: ", self.marca, "\nModelo: ", self.modelo, "\nEn marcha: ", self.en_marcha, #"\nAcelerando: ", self.acelera, "\nFrenando: ", self.frena,"\n", self.hcaballito)
+
+#class VElectricos():
+#    def __init__(self):
+#      self.autonomia=100
+
+#    def cargarEnergia(self):
+#      self.cargando=True
+      
+#mi_moto=Moto("BMW", "D1800")
+#mi_moto.caballito()
+#mi_moto.edo()
+#miFurgoneta=Furgoneta("Renault","Kangoo")
+#miFurgoneta.arrancar()
+#miFurgoneta.edo()
+#print(miFurgoneta.carga(True))
+
+#class BicicletaElectrica(VElectricos, Transporte):
+#  pass
+#miBici=BicicletaElectrica()
+
+
+#Herencia Super
+#class Persona():
+  #def __init__(self,nombre,edad,residencia):
+  #    self.nombre=nombre
+  #    self.edad=edad
+  #    self.residencia=residencia
+#  def descripcion(self):
+#    print("Nombre:", self.nombre,"Edad:",self.edad,"Residencia:",self.residencia)
+
+#class Empleado(Persona):
+#  def __init__(self,salario,antiguedad,nombre_empleado,edad_empleado,residencia_empleado):
+#      super().__init__(nombre_empleado,edad_empleado,residencia_empleado)
+#      self.salario=salario
+#      self.antiguedad=antiguedad
+#  def descripcion(self):
+#    super().descripcion()
+#    print("Salario:",self.salario,"Antiguedad",self.antiguedad)
+
+#ManuelZ=Empleado(1500,15,"Manuel",55,"Colombia")
+#ManuelZ.descripcion()
+#principio de sustitucion, junto con la funcion isinstance.
+#print(isinstance(ManuelZ,Empleado))
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
